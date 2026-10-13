@@ -1,0 +1,23 @@
+{
+  "name": "fyc-whatsapp-daily",
+  "version": "1.0.0",
+  "description": "Sends a scheduled daily message to a WhatsApp group from a linked WhatsApp number.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "login": "node src/cli.js login",
+    "groups": "node src/cli.js groups",
+    "send": "node src/cli.js send",
+    "preview": "node src/cli.js preview",
+    "start": "node src/cli.js start"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^7.0.0-rc14",
+    "node-cron": "^4.6.0",
+    "pino": "^10.4.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
